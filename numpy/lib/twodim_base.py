@@ -300,7 +300,7 @@ def diag(v, k=0):
     elif len(s) == 2:
         return diagonal(v, k)
     else:
-        raise ValueError("Input must be 1- or 2-d.")
+        raise ValueError("Input must be 1-d or 2-d.")
 
 
 @array_function_dispatch(_diag_dispatcher)
